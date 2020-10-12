@@ -54,7 +54,7 @@ header {
     font-weight: 800;
 }
 
-#home {
+.content {
     display: inline-block;
     position: relative;
     margin-top: 221px;
