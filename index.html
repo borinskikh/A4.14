@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>page</title>
+    <title>A4.14</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=700px, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic">
@@ -14,38 +13,68 @@
 
 <body>
     <header class="header">
-        <ul class="header-items">
-            <li class="header-item">
-                <a class="header-text link" href="#home">home</a>
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__text" href="#home">home</a>
             </li>
-            <li class="header-item">
-                <a class="header-text link" href="#portfolio">portfolio</a>
+            <li class="menu__item">
+                <a class="menu__text" href="#portfolio">portfolio</a>
             </li>
-            <li class="header-item">
-                <a class="header-text link" href="#about-us">about us</a>
+            <li class="menu__item">
+                <a class="menu__text" href="#about-us">about us</a>
             </li>
-            <li class="header-item">
-                <a class="header-text link" href="#contact">contact</a>
+            <li class="menu__item">
+                <a class="menu__text" href="#contact">contact</a>
             </li>
         </ul>
     </header>
     <main class="content">
         <section class="home" id="home">
-            <div class="home-left-column">
-                <div class="home-left-column-text">
-                    <h1>our strong organization</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
+            <div class="home__left-column">
+                <div class="home__text-wrapper">
+                    <h1 class="home__headline">our strong organization</h1>
+                    <p class="home__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
+                        tempor incididunt ut
                         labore
                         et.
                         ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
-                <button type="button" class="home-left-column-button"><a href="#" class="link">Contact Us</a></button>
+                <button type="button" class="home__button"><a href="#" class="home__button-link">Contact Us</a></button>
             </div>
-            <a class="home-right-column" href="#">
-                <img src="images/red-rectangle.png" height="356px" width="551px" alt="">
+            <a class="home__right-column" href="#">
+                <img src="images/red-rectangle.png" class="home__image" height="356px" width="551px"
+                    alt="red rectangle">
             </a>
         </section>
     </main>
+    <footer class="footer">
+        <p class="footer__copyright">
+            © Copyright @Junaed 2016, All rights reserved.
+        </p>
+        <ul class="footer__links">
+            <li>
+                <a class="footer__link" href="https://twitter.com">
+                    <img src="images/twitter.png" width="33px" height="33px" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a class="footer__link" href="https://linkedin.com">
+                    <img src="images/linkedin.png" width="33px" height="33px" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a class="footer__link" href="https://en.wikipedia.org/wiki/Google+">
+                    <img src="images/googleplus.png" width="33px" height="33px" alt="Google+">
+                </a>
+            </li>
+            <li>
+                <a class="footer__link" href="https://facebook.com">
+                    <img src="images/facebook.png" width="33px" height="33px" alt="Facebook">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
