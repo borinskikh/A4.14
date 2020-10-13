@@ -5,12 +5,13 @@ body {
     font-family: Open Sans;
     font-style: normal;
 }
-a {
+
+.link {
     text-decoration: none;
     color: white;
 }
 
-header {
+.header {
 	box-sizing: border-box;
 	display: flex;
 	align-items: stretch;
@@ -22,7 +23,7 @@ header {
 	background-color: #000000;
 }
 
-ul {
+.header-items {
     display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -53,40 +54,44 @@ ul {
     display: flex;
 	align-items: center;
 	padding: 0 30px;
-	color: #e0e0e0;
 	font-size: 14px;
 	font-weight: bold;
-	text-decoration: none;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .content {
     display: flex;
     margin-top: 221px;
     max-width: 1249px;
-    max-height: 356px;
+    flex-direction: column;
 }
 
-#home {
+.home {
     display: flex;
     flex-flow: row wrap;
-   align-content: space-between;
-    width: 1249px;
+    justify-content: space-between;
+    width: inherit;
 }
 
-.left-column {
+.home-left-column {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: space-between;
     max-width: 618px;
     height: 356px;
 }
 
-.right-column {
-    display: flex;
-    height: 356px;
-    width: 551px;
+.home-left-column-button {
+    background: #FF2D2D;
+    width: 227px;
+    height: 55px;
+    border: none;
+    font-weight: bold;
+    font-size: 18.0412px;
+    line-height: 34px;
+    letter-spacing: 0.3195px;
 }
+
 
 h1 {
     margin: 0;
@@ -107,15 +112,5 @@ p {
     line-height: 28px;
 }
 
-button {
-    background-color: #FF2D2D;
-    color: white;
-    width: 227px;
-    height: 55px;
-    border: none;
-    font-weight: bold;
-    font-size: 18.0412px;
-    line-height: 34px;
-    letter-spacing: 0.3195px;
-}
+
 
