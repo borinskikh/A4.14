@@ -43,7 +43,6 @@ body {
 	align-items: stretch;
 	padding: 0;
 	margin: 0;	
-	margin-left: -20px;
 }
 
 .menu__item {
@@ -51,7 +50,8 @@ body {
 	flex-wrap: wrap;
 	align-items: stretch;
     text-justify: auto;
-	padding: 0;
+    justify-content: center;
+    padding: 0;
 	margin: 0;	
     min-width: 89px;
     min-height: 89px;
@@ -63,8 +63,7 @@ body {
 
 .menu__text {
     display: flex;
-	align-items: center;
-    padding: 0 30px;
+    align-items: center;
     text-decoration: none;
     color: #E0E0E0;
     font-weight: 700;
@@ -85,7 +84,7 @@ body {
 
 .home {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     width: inherit;
     margin-bottom: 111px;
@@ -97,7 +96,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 618px;
-    height: 356px;
+    min-height: 356px;
 }
 
 .home__headline {
@@ -184,7 +183,8 @@ body {
         padding: 0 1vw;
     }
 
-    .home__left-column {
+    .home__left-column,
+    .home__right-column {
         width: 50%;
 
     }
@@ -194,21 +194,22 @@ body {
         word-break: break-all;
         hyphens: auto;
     }
-
-    .home__right-column {
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 900px) {
 
-    .home__left-column {
-        width: 100%;
-    }
-    
+    .home__left-column,
     .home__right-column {
-        margin-top: 26px;
         width: 100%;
+        height: auto;
+    }
+
+    .home__headline {
+        font-size: 60px;
+    }
+
+    .home__right-column {
+        margin-top: 30px;
     }
 
     .footer__copyright {
@@ -221,12 +222,29 @@ body {
 
     @media screen and (max-width: 600px) {
         
+        .home__headline {
+            font-size: 10vw;
+        }
+
         .footer {
             flex-flow: row wrap;
         }
 
-        .home__headline {
-            font-size: 35px;
+        .footer__links {
+            margin-right: 0;
+            width: 100%;
+            justify-content: center;
+            padding-left: 0;
+        }
+
+        .footer__copyright {
+            margin-left: 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .menu__item {
+            min-width: 87px;
         }
     }
 }
